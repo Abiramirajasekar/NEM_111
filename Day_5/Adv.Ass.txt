@@ -1,0 +1,4 @@
+Find all the countries in region "Asia"
+db.users.find({region:"Asia"}) 
+Find all the countries with currency: "EUR"
+db.users.find({currency:"EUR"})

@@ -1,0 +1,1006 @@
+ {
+    _id: ObjectId("631afafc694388242680b58e"),
+    id: 12,
+    first_name: 'Irvine',
+    last_name: 'Croxton',
+    email: 'icroxtonb@engadget.com',
+    gender: 'Male',
+    age: 92
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58f"),
+    id: 13,
+    first_name: 'Dennison',
+    last_name: 'Fiddler',
+    email: 'dfiddlerc@vinaora.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b590"),
+    id: 14,
+    first_name: 'Melina',
+    last_name: 'Godlonton',
+    email: 'mgodlontond@mapquest.com',
+    gender: 'Female',
+    age: 42
+  },
+  {
+    _id: ObjectId("631afafc694388242680b591"),
+    id: 15,
+    first_name: 'Hilarius',
+    last_name: 'MacNamee',
+    email: 'hmacnameee@comsenz.com',
+    gender: 'Male',
+    age: 78
+  },
+  {
+    _id: ObjectId("631afafc694388242680b592"),
+    id: 16,
+    first_name: 'Odella',
+    last_name: 'Mugford',
+    email: 'omugfordf@nbcnews.com',
+    gender: 'Female',
+    age: 57
+  }
+]
+Type "it" for more
+B18> db.users.find().sort({name:1}).pretty()
+[
+  {
+    _id: ObjectId("631afafc694388242680b583"),
+    id: 1,
+    first_name: 'Toni',
+    last_name: 'Reinbeck',
+    email: 'treinbeck0@redcross.org',
+    gender: 'Female',
+    age: 65
+  },
+  {
+    _id: ObjectId("631afafc694388242680b584"),
+    id: 2,
+    first_name: 'Leland',
+    last_name: 'Cooksley',
+    email: 'lcooksley1@cocolog-nifty.com',
+    gender: 'Male',
+    age: 40
+  },
+  {
+    _id: ObjectId("631afafc694388242680b585"),
+    id: 3,
+    first_name: 'Arlinda',
+    last_name: 'Goldman',
+    email: 'agoldman2@squidoo.com',
+    gender: 'Female',
+    age: 85
+  },
+  {
+    _id: ObjectId("631afafc694388242680b586"),
+    id: 4,
+    first_name: 'Caroljean',
+    last_name: 'Boneham',
+    email: 'cboneham3@nifty.com',
+    gender: 'Non-binary',
+    age: 62
+  },
+  {
+    _id: ObjectId("631afafc694388242680b587"),
+    id: 5,
+    first_name: 'Garrett',
+    last_name: 'Veare',
+    email: 'gveare4@earthlink.net',
+    gender: 'Bigender',
+    age: 7
+  },
+  {
+    _id: ObjectId("631afafc694388242680b588"),
+    id: 6,
+    first_name: 'Boote',
+    last_name: 'Pexton',
+    email: 'bpexton5@biblegateway.com',
+    gender: 'Male',
+    age: 11
+  },
+  {
+    _id: ObjectId("631afafc694388242680b589"),
+    id: 7,
+    first_name: 'Quincy',
+    last_name: 'Gudde',
+    email: 'qgudde6@cbsnews.com',
+    gender: 'Male',
+    age: 32
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58a"),
+    id: 8,
+    first_name: 'Patricio',
+    last_name: 'Gerhold',
+    email: 'pgerhold7@networksolutions.com',
+    gender: 'Male',
+    age: 76
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58b"),
+    id: 9,
+    first_name: 'Fairlie',
+    last_name: 'Gillespey',
+    email: 'fgillespey8@tamu.edu',
+    gender: 'Male',
+    age: 61
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58c"),
+    id: 10,
+    first_name: 'Alix',
+    last_name: 'Stanyforth',
+    email: 'astanyforth9@theguardian.com',
+    gender: 'Female',
+    age: 34
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58d"),
+    id: 11,
+    first_name: 'Indira',
+    last_name: 'Norssister',
+    email: 'inorssistera@a8.net',
+    gender: 'Polygender',
+    age: 20
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58e"),
+    id: 12,
+    first_name: 'Irvine',
+    last_name: 'Croxton',
+    email: 'icroxtonb@engadget.com',
+    gender: 'Male',
+    age: 92
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58f"),
+    id: 13,
+    first_name: 'Dennison',
+    last_name: 'Fiddler',
+    email: 'dfiddlerc@vinaora.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b590"),
+    id: 14,
+    first_name: 'Melina',
+    last_name: 'Godlonton',
+    email: 'mgodlontond@mapquest.com',
+    gender: 'Female',
+    age: 42
+  },
+  {
+    _id: ObjectId("631afafc694388242680b591"),
+    id: 15,
+    first_name: 'Hilarius',
+    last_name: 'MacNamee',
+    email: 'hmacnameee@comsenz.com',
+    gender: 'Male',
+    age: 78
+  },
+  {
+    _id: ObjectId("631afafc694388242680b592"),
+    id: 16,
+    first_name: 'Odella',
+    last_name: 'Mugford',
+    email: 'omugfordf@nbcnews.com',
+    gender: 'Female',
+    age: 57
+  },
+  {
+    _id: ObjectId("631afafc694388242680b593"),
+    id: 17,
+    first_name: 'Poul',
+    last_name: 'Josskovitz',
+    email: 'pjosskovitzg@woothemes.com',
+    gender: 'Male',
+    age: 25
+  },
+  {
+    _id: ObjectId("631afafc694388242680b594"),
+    id: 18,
+    first_name: 'Louisette',
+    last_name: 'Josephi',
+    email: 'ljosephih@angelfire.com',
+    gender: 'Female',
+    age: 2
+  },
+  {
+    _id: ObjectId("631afafc694388242680b595"),
+    id: 19,
+    first_name: 'Ferdy',
+    last_name: 'Semper',
+    email: 'fsemperi@jigsy.com',
+    gender: 'Male',
+    age: 15
+  },
+  {
+    _id: ObjectId("631afafc694388242680b596"),
+    id: 20,
+    first_name: 'Otes',
+    last_name: 'Nockells',
+    email: 'onockellsj@etsy.com',
+    gender: 'Agender',
+    age: 32
+  }
+]
+Type "it" for more
+B18> db.users.find().sort({name:1}).pretty()
+[
+  {
+    _id: ObjectId("631afafc694388242680b583"),
+    id: 1,
+    first_name: 'Toni',
+    last_name: 'Reinbeck',
+    email: 'treinbeck0@redcross.org',
+    gender: 'Female',
+    age: 65
+  },
+  {
+    _id: ObjectId("631afafc694388242680b584"),
+    id: 2,
+    first_name: 'Leland',
+    last_name: 'Cooksley',
+    email: 'lcooksley1@cocolog-nifty.com',
+    gender: 'Male',
+    age: 40
+  },
+  {
+    _id: ObjectId("631afafc694388242680b585"),
+    id: 3,
+    first_name: 'Arlinda',
+    last_name: 'Goldman',
+    email: 'agoldman2@squidoo.com',
+    gender: 'Female',
+    age: 85
+  },
+  {
+    _id: ObjectId("631afafc694388242680b586"),
+    id: 4,
+    first_name: 'Caroljean',
+    last_name: 'Boneham',
+    email: 'cboneham3@nifty.com',
+    gender: 'Non-binary',
+    age: 62
+  },
+  {
+    _id: ObjectId("631afafc694388242680b587"),
+    id: 5,
+    first_name: 'Garrett',
+    last_name: 'Veare',
+    email: 'gveare4@earthlink.net',
+    gender: 'Bigender',
+    age: 7
+  },
+  {
+    _id: ObjectId("631afafc694388242680b588"),
+    id: 6,
+    first_name: 'Boote',
+    last_name: 'Pexton',
+    email: 'bpexton5@biblegateway.com',
+    gender: 'Male',
+    age: 11
+  },
+  {
+    _id: ObjectId("631afafc694388242680b589"),
+    id: 7,
+    first_name: 'Quincy',
+    last_name: 'Gudde',
+    email: 'qgudde6@cbsnews.com',
+    gender: 'Male',
+    age: 32
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58a"),
+    id: 8,
+    first_name: 'Patricio',
+    last_name: 'Gerhold',
+    email: 'pgerhold7@networksolutions.com',
+    gender: 'Male',
+    age: 76
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58b"),
+    id: 9,
+    first_name: 'Fairlie',
+    last_name: 'Gillespey',
+    email: 'fgillespey8@tamu.edu',
+    gender: 'Male',
+    age: 61
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58c"),
+    id: 10,
+    first_name: 'Alix',
+    last_name: 'Stanyforth',
+    email: 'astanyforth9@theguardian.com',
+    gender: 'Female',
+    age: 34
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58d"),
+    id: 11,
+    first_name: 'Indira',
+    last_name: 'Norssister',
+    email: 'inorssistera@a8.net',
+    gender: 'Polygender',
+    age: 20
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58e"),
+    id: 12,
+    first_name: 'Irvine',
+    last_name: 'Croxton',
+    email: 'icroxtonb@engadget.com',
+    gender: 'Male',
+    age: 92
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58f"),
+    id: 13,
+    first_name: 'Dennison',
+    last_name: 'Fiddler',
+    email: 'dfiddlerc@vinaora.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b590"),
+    id: 14,
+    first_name: 'Melina',
+    last_name: 'Godlonton',
+    email: 'mgodlontond@mapquest.com',
+    gender: 'Female',
+    age: 42
+  },
+  {
+    _id: ObjectId("631afafc694388242680b591"),
+    id: 15,
+    first_name: 'Hilarius',
+    last_name: 'MacNamee',
+    email: 'hmacnameee@comsenz.com',
+    gender: 'Male',
+    age: 78
+  },
+  {
+    _id: ObjectId("631afafc694388242680b592"),
+    id: 16,
+    first_name: 'Odella',
+    last_name: 'Mugford',
+    email: 'omugfordf@nbcnews.com',
+    gender: 'Female',
+    age: 57
+  },
+  {
+    _id: ObjectId("631afafc694388242680b593"),
+    id: 17,
+    first_name: 'Poul',
+    last_name: 'Josskovitz',
+    email: 'pjosskovitzg@woothemes.com',
+    gender: 'Male',
+    age: 25
+  },
+  {
+    _id: ObjectId("631afafc694388242680b594"),
+    id: 18,
+    first_name: 'Louisette',
+    last_name: 'Josephi',
+    email: 'ljosephih@angelfire.com',
+    gender: 'Female',
+    age: 2
+  },
+  {
+    _id: ObjectId("631afafc694388242680b595"),
+    id: 19,
+    first_name: 'Ferdy',
+    last_name: 'Semper',
+    email: 'fsemperi@jigsy.com',
+    gender: 'Male',
+    age: 15
+  },
+  {
+    _id: ObjectId("631afafc694388242680b596"),
+    id: 20,
+    first_name: 'Otes',
+    last_name: 'Nockells',
+    email: 'onockellsj@etsy.com',
+    gender: 'Agender',
+    age: 32
+  }
+]
+Type "it" for more
+B18> db.users.find().sort({id:-1}).pretty()
+[
+  {
+    _id: ObjectId("631afafc694388242680b5e6"),
+    id: 100,
+    first_name: 'Chrystal',
+    last_name: 'Ramos',
+    email: 'cramos2r@shinystat.com',
+    gender: 'Female',
+    age: 5
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e5"),
+    id: 99,
+    first_name: 'Leoine',
+    last_name: 'Masse',
+    email: 'lmasse2q@archive.org',
+    gender: 'Female',
+    age: 15
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e4"),
+    id: 98,
+    first_name: 'Rodolphe',
+    last_name: 'Seaman',
+    email: 'rseaman2p@technorati.com',
+    gender: 'Male',
+    age: 46
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e3"),
+    id: 97,
+    first_name: 'Rosalynd',
+    last_name: 'Dodgson',
+    email: 'rdodgson2o@naver.com',
+    gender: 'Female',
+    age: 57
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e2"),
+    id: 96,
+    first_name: 'Marrilee',
+    last_name: 'Andrivel',
+    email: 'mandrivel2n@chronoengine.com',
+    gender: 'Female',
+    age: 55
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e1"),
+    id: 95,
+    first_name: 'Viv',
+    last_name: 'Miranda',
+    email: 'vmiranda2m@earthlink.net',
+    gender: 'Female',
+    age: 23
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5e0"),
+    id: 94,
+    first_name: 'Falkner',
+    last_name: 'Elwill',
+    email: 'felwill2l@nationalgeographic.com',
+    gender: 'Male',
+    age: 48
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5df"),
+    id: 93,
+    first_name: 'Lisa',
+    last_name: 'Lushey',
+    email: 'llushey2k@tripadvisor.com',
+    gender: 'Female',
+    age: 31
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5de"),
+    id: 92,
+    first_name: 'Filmer',
+    last_name: 'Kendell',
+    email: 'fkendell2j@eepurl.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5dd"),
+    id: 91,
+    first_name: 'Hermie',
+    last_name: 'Tearny',
+    email: 'htearny2i@msu.edu',
+    gender: 'Male',
+    age: 6
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5dc"),
+    id: 90,
+    first_name: 'Gaspard',
+    last_name: 'Voysey',
+    email: 'gvoysey2h@nasa.gov',
+    gender: 'Male',
+    age: 11
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5db"),
+    id: 89,
+    first_name: 'Aaron',
+    last_name: 'Godleman',
+    email: 'agodleman2g@bizjournals.com',
+    gender: 'Male',
+    age: 29
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5da"),
+    id: 88,
+    first_name: 'Norry',
+    last_name: 'Bromby',
+    email: 'nbromby2f@oracle.com',
+    gender: 'Male',
+    age: 54
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d9"),
+    id: 87,
+    first_name: 'Garrek',
+    last_name: 'Filipputti',
+    email: 'gfilipputti2e@mysql.com',
+    gender: 'Male',
+    age: 26
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d8"),
+    id: 86,
+    first_name: 'Jackqueline',
+    last_name: 'Ellar',
+    email: 'jellar2d@typepad.com',
+    gender: 'Female',
+    age: 13
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d7"),
+    id: 85,
+    first_name: 'Julieta',
+    last_name: 'Barhams',
+    email: 'jbarhams2c@fda.gov',
+    gender: 'Female',
+    age: 15
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d6"),
+    id: 84,
+    first_name: 'Mayor',
+    last_name: 'Lively',
+    email: 'mlively2b@barnesandnoble.com',
+    gender: 'Genderfluid',
+    age: 41
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d5"),
+    id: 83,
+    first_name: 'Aubree',
+    last_name: 'Chandlar',
+    email: 'achandlar2a@nba.com',
+    gender: 'Female',
+    age: 85
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d4"),
+    id: 82,
+    first_name: 'Dylan',
+    last_name: 'Standidge',
+    email: 'dstandidge29@furl.net',
+    gender: 'Male',
+    age: 13
+  },
+  {
+    _id: ObjectId("631afafc694388242680b5d3"),
+    id: 81,
+    first_name: 'Forbes',
+    last_name: 'Broom',
+    email: 'fbroom28@unc.edu',
+    gender: 'Male',
+    age: 80
+  }
+]
+Type "it" for more
+B18> db.users.find({$or:[{city:"INDIA"},{course:"NEM_11"}]})
+
+B18> db.users.find({$or:[{country:"INDIA"},{course:"NEM_111"}]})
+[
+  {
+    _id: ObjectId("634c2d9b28da79f6836dcf9a"),
+    name: 'Abirami',
+    city: 'Bangalore',
+    country: 'INDIA'
+  },
+  {
+    _id: ObjectId("634c375e28da79f6836dcf9b"),
+    name: 'Nihal',
+    course: 'NEM_111'
+  }
+]
+B18> db.users.find({age:{$gt:25}}).pretty()
+[
+  {
+    _id: ObjectId("631afafc694388242680b583"),
+    id: 1,
+    first_name: 'Toni',
+    last_name: 'Reinbeck',
+    email: 'treinbeck0@redcross.org',
+    gender: 'Female',
+    age: 65
+  },
+  {
+    _id: ObjectId("631afafc694388242680b584"),
+    id: 2,
+    first_name: 'Leland',
+    last_name: 'Cooksley',
+    email: 'lcooksley1@cocolog-nifty.com',
+    gender: 'Male',
+    age: 40
+  },
+  {
+    _id: ObjectId("631afafc694388242680b585"),
+    id: 3,
+    first_name: 'Arlinda',
+    last_name: 'Goldman',
+    email: 'agoldman2@squidoo.com',
+    gender: 'Female',
+    age: 85
+  },
+  {
+    _id: ObjectId("631afafc694388242680b586"),
+    id: 4,
+    first_name: 'Caroljean',
+    last_name: 'Boneham',
+    email: 'cboneham3@nifty.com',
+    gender: 'Non-binary',
+    age: 62
+  },
+  {
+    _id: ObjectId("631afafc694388242680b589"),
+    id: 7,
+    first_name: 'Quincy',
+    last_name: 'Gudde',
+    email: 'qgudde6@cbsnews.com',
+    gender: 'Male',
+    age: 32
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58a"),
+    id: 8,
+    first_name: 'Patricio',
+    last_name: 'Gerhold',
+    email: 'pgerhold7@networksolutions.com',
+    gender: 'Male',
+    age: 76
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58b"),
+    id: 9,
+    first_name: 'Fairlie',
+    last_name: 'Gillespey',
+    email: 'fgillespey8@tamu.edu',
+    gender: 'Male',
+    age: 61
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58c"),
+    id: 10,
+    first_name: 'Alix',
+    last_name: 'Stanyforth',
+    email: 'astanyforth9@theguardian.com',
+    gender: 'Female',
+    age: 34
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58e"),
+    id: 12,
+    first_name: 'Irvine',
+    last_name: 'Croxton',
+    email: 'icroxtonb@engadget.com',
+    gender: 'Male',
+    age: 92
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58f"),
+    id: 13,
+    first_name: 'Dennison',
+    last_name: 'Fiddler',
+    email: 'dfiddlerc@vinaora.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b590"),
+    id: 14,
+    first_name: 'Melina',
+    last_name: 'Godlonton',
+    email: 'mgodlontond@mapquest.com',
+    gender: 'Female',
+    age: 42
+  },
+  {
+    _id: ObjectId("631afafc694388242680b591"),
+    id: 15,
+    first_name: 'Hilarius',
+    last_name: 'MacNamee',
+    email: 'hmacnameee@comsenz.com',
+    gender: 'Male',
+    age: 78
+  },
+  {
+    _id: ObjectId("631afafc694388242680b592"),
+    id: 16,
+    first_name: 'Odella',
+    last_name: 'Mugford',
+    email: 'omugfordf@nbcnews.com',
+    gender: 'Female',
+    age: 57
+  },
+  {
+    _id: ObjectId("631afafc694388242680b596"),
+    id: 20,
+    first_name: 'Otes',
+    last_name: 'Nockells',
+    email: 'onockellsj@etsy.com',
+    gender: 'Agender',
+    age: 32
+  },
+  {
+    _id: ObjectId("631afafc694388242680b597"),
+    id: 21,
+    first_name: 'Marty',
+    last_name: 'Odgaard',
+    email: 'modgaardk@prlog.org',
+    gender: 'Female',
+    age: 45
+  },
+  {
+    _id: ObjectId("631afafc694388242680b598"),
+    id: 22,
+    first_name: 'Gregorio',
+    last_name: 'Iacovazzi',
+    email: 'giacovazzil@discovery.com',
+    gender: 'Male',
+    age: 68
+  },
+  {
+    _id: ObjectId("631afafc694388242680b59a"),
+    id: 24,
+    first_name: 'Uta',
+    last_name: 'Joul',
+    email: 'ujouln@msn.com',
+    gender: 'Female',
+    age: 34
+  },
+  {
+    _id: ObjectId("631afafc694388242680b59c"),
+    id: 26,
+    first_name: 'Sarajane',
+    last_name: 'Clears',
+    email: 'sclearsp@shareasale.com',
+    gender: 'Female',
+    age: 39
+  },
+  {
+    _id: ObjectId("631afafc694388242680b59e"),
+    id: 28,
+    first_name: 'Joanna',
+    last_name: 'Nijs',
+    email: 'jnijsr@scribd.com',
+    gender: 'Female',
+    age: 84
+  },
+  {
+    _id: ObjectId("631afafc694388242680b59f"),
+    id: 29,
+    first_name: 'Flory',
+    last_name: 'Rubberts',
+    email: 'frubbertss@paginegialle.it',
+    gender: 'Genderqueer',
+    age: 82
+  }
+]
+Type "it" for more
+B18> db.users.find({course:"NEM_111"},{$exists:true}).pretty()
+MongoServerError: FieldPath field names may not start with 
+'$'. Consider using $getField or $setField.
+B18> db.users.find({age:{$exists:true}}).pretty()
+[
+  {
+    _id: ObjectId("631afafc694388242680b583"),
+    id: 1,
+    first_name: 'Toni',
+    last_name: 'Reinbeck',
+    email: 'treinbeck0@redcross.org',
+    gender: 'Female',
+    age: 65
+  },
+  {
+    _id: ObjectId("631afafc694388242680b584"),
+    id: 2,
+    first_name: 'Leland',
+    last_name: 'Cooksley',
+    email: 'lcooksley1@cocolog-nifty.com',
+    gender: 'Male',
+    age: 40
+  },
+  {
+    _id: ObjectId("631afafc694388242680b585"),
+    id: 3,
+    first_name: 'Arlinda',
+    last_name: 'Goldman',
+    email: 'agoldman2@squidoo.com',
+    gender: 'Female',
+    age: 85
+  },
+  {
+    _id: ObjectId("631afafc694388242680b586"),
+    id: 4,
+    first_name: 'Caroljean',
+    last_name: 'Boneham',
+    email: 'cboneham3@nifty.com',
+    gender: 'Non-binary',
+    age: 62
+  },
+  {
+    _id: ObjectId("631afafc694388242680b587"),
+    id: 5,
+    first_name: 'Garrett',
+    last_name: 'Veare',
+    email: 'gveare4@earthlink.net',
+    gender: 'Bigender',
+    age: 7
+  },
+  {
+    _id: ObjectId("631afafc694388242680b588"),
+    id: 6,
+    first_name: 'Boote',
+    last_name: 'Pexton',
+    email: 'bpexton5@biblegateway.com',
+    gender: 'Male',
+    age: 11
+  },
+  {
+    _id: ObjectId("631afafc694388242680b589"),
+    id: 7,
+    first_name: 'Quincy',
+    last_name: 'Gudde',
+    email: 'qgudde6@cbsnews.com',
+    gender: 'Male',
+    age: 32
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58a"),
+    id: 8,
+    first_name: 'Patricio',
+    last_name: 'Gerhold',
+    email: 'pgerhold7@networksolutions.com',
+    gender: 'Male',
+    age: 76
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58b"),
+    id: 9,
+    first_name: 'Fairlie',
+    last_name: 'Gillespey',
+    email: 'fgillespey8@tamu.edu',
+    gender: 'Male',
+    age: 61
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58c"),
+    id: 10,
+    first_name: 'Alix',
+    last_name: 'Stanyforth',
+    email: 'astanyforth9@theguardian.com',
+    gender: 'Female',
+    age: 34
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58d"),
+    id: 11,
+    first_name: 'Indira',
+    last_name: 'Norssister',
+    email: 'inorssistera@a8.net',
+    gender: 'Polygender',
+    age: 20
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58e"),
+    id: 12,
+    first_name: 'Irvine',
+    last_name: 'Croxton',
+    email: 'icroxtonb@engadget.com',
+    gender: 'Male',
+    age: 92
+  },
+  {
+    _id: ObjectId("631afafc694388242680b58f"),
+    id: 13,
+    first_name: 'Dennison',
+    last_name: 'Fiddler',
+    email: 'dfiddlerc@vinaora.com',
+    gender: 'Male',
+    age: 82
+  },
+  {
+    _id: ObjectId("631afafc694388242680b590"),
+    id: 14,
+    first_name: 'Melina',
+    last_name: 'Godlonton',
+    email: 'mgodlontond@mapquest.com',
+    gender: 'Female',
+    age: 42
+  },
+  {
+    _id: ObjectId("631afafc694388242680b591"),
+    id: 15,
+    first_name: 'Hilarius',
+    last_name: 'MacNamee',
+    email: 'hmacnameee@comsenz.com',
+    gender: 'Male',
+    age: 78
+  },
+  {
+    _id: ObjectId("631afafc694388242680b592"),
+    id: 16,
+    first_name: 'Odella',
+    last_name: 'Mugford',
+    email: 'omugfordf@nbcnews.com',
+    gender: 'Female',
+    age: 57
+  },
+  {
+    _id: ObjectId("631afafc694388242680b593"),
+    id: 17,
+    first_name: 'Poul',
+    last_name: 'Josskovitz',
+    email: 'pjosskovitzg@woothemes.com',
+    gender: 'Male',
+    age: 25
+  },
+  {
+    _id: ObjectId("631afafc694388242680b594"),
+    id: 18,
+    first_name: 'Louisette',
+    last_name: 'Josephi',
+    email: 'ljosephih@angelfire.com',
+    gender: 'Female',
+    age: 2
+  },
+  {
+    _id: ObjectId("631afafc694388242680b595"),
+    id: 19,
+    first_name: 'Ferdy',
+    last_name: 'Semper',
+    email: 'fsemperi@jigsy.com',
+    gender: 'Male',
+    age: 15
+  },
+  {
+    _id: ObjectId("631afafc694388242680b596"),
+    id: 20,
+    first_name: 'Otes',
+    last_name: 'Nockells',
+    email: 'onockellsj@etsy.com',
+    gender: 'Agender',
+    age: 32
+  }
+]
+Type "it" for more
+B18> db.users.find({age:{$exists:false}}).pretty()
+[
+  {
+    _id: ObjectId("634c2d9b28da79f6836dcf99"),
+    name: 'pallavi',
+    course: 'NEM'
+  },
+  {
+    _id: ObjectId("634c2d9b28da79f6836dcf9a"),
+    name: 'Abirami',
+    city: 'Bangalore',
+    country: 'INDIA'
+  },
+  {
+    _id: ObjectId("634c375e28da79f6836dcf9b"),
+    name: 'Nihal',
+    course: 'NEM_111'
+  }
+]
+B18>

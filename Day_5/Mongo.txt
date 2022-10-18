@@ -1,0 +1,334 @@
+Start:Mongosh
+
+test> show dbs
+
+B18      44.00 KiB
+DATA     68.00 KiB
+IMDB     44.00 KiB
+PSC     288.00 KiB
+admin    40.00 KiB
+config   60.00 KiB
+local    72.00 KiB
+test     40.00 KiB
+//Choose database
+test> use B18
+switched to db B18
+
+//to createCollection
+
+B18> db.createCollection("Students")
+
+{ ok: 1 }
+//to find something
+B18> db.Students.find()
+
+//to insertOne
+B18> db.Students.insertOne({name:"Abi"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c22cf28da79f6836dcf90")
+}
+B18> db.Students.insertOne({name:"Abi",course:"NEM_111"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c22f228da79f6836dcf91")
+}
+B18> db.Students.insertOne({name:"AbB18> db.Students.insertOne({name:"Abi"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c231f28da79f6836dcf92")
+}
+B18> db.Students.insertOne({name:"Abirami",course:"NEM_111"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c233e28da79f6836dcf93")
+}
+B18> db.Students.find().pretty()
+[
+  { _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111'
+  },
+  { _id: ObjectId("634c231f28da79f6836dcf92"), name: 'Abi' },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111'
+  }
+]
+B18> db.Students.deleteOne({_id:ObjectId("634c231f28da79f6836dcf92")})  
+{ acknowledged: true, deletedCount: 
+1 }
+B18> db.Students.find().pretty()
+[
+  { _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111'
+  },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111'
+  }
+]
+B18> db.Students.findOne({name:"Abi"}).pretty()
+TypeError: db.Students.f ... Abi"}).pretty is not a function //we cant prettyfy the one value
+
+
+B18> db.Students.findOne({name:"Abi"})
+{ _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' }
+B18> db.Students.findOne()
+{ _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' }
+
+B18> db.Students.insertOne({name:"Vamika",age:"8mo"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c24ee28da79f6836dcf94")
+}
+B18> db.Students.insertOne({name:"Ammu",age:"17"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("634c250c28da79f6836dcf95")
+}
+B18> db.Students.find().pretty()    
+[
+  { _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111'
+  },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111'
+  },
+  {
+    _id: ObjectId("634c24ee28da79f6836dcf94"),
+    name: 'Vamika',
+    age: '8mo'
+  },
+  {
+    _id: ObjectId("634c250c28da79f6836dcf95"),
+    name: 'Ammu',
+    age: '17'
+  }
+]
+
+B18> db.Students.insertMany([{name:"Albert",course:"rct"},{name:"Ankush",course:"DSA"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("634c25c828da79f6836dcf96"),
+    '1': ObjectId("634c25c828da79f6836dcf97")
+  }
+}
+B18> db.Students.find().pretty()
+[
+  { _id: ObjectId("634c22cf28da79f6836dcf90"), name: 'Abi' },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111'
+  },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111'
+  },
+  {
+    _id: ObjectId("634c24ee28da79f6836dcf94"),
+    name: 'Vamika',
+    age: '8mo'
+  },
+  {
+    _id: ObjectId("634c250c28da79f6836dcf95"),
+    name: 'Ammu',
+    age: '17'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf96"),
+    name: 'Albert',
+    course: 'rct'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf97"),
+    name: 'Ankush',
+    course: 'DSA'
+  }
+]
+
+B18> db.Students.updateMany({},{$set:{Country:"India"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 7,
+  modifiedCount: 7,
+  upsertedCount: 0
+}
+B18> db.Students.find().pretty()
+[
+  {
+    _id: ObjectId("634c22cf28da79f6836dcf90"),
+    name: 'Abi',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c24ee28da79f6836dcf94"),
+    name: 'Vamika',
+    age: '8mo',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c250c28da79f6836dcf95"),
+    name: 'Ammu',
+    age: '17',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf96"),
+    name: 'Albert',
+    course: 'rct',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf97"),
+    name: 'Ankush',
+    course: 'DSA',
+    Country: 'India'
+  }
+]
+B18> db.Students.updateOne({name:"Abi"},{$set:{age:25}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+B18> db.Students.updateOne({name:"Abirami"},{$set:{age:25}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+B18> db.Students.updateOne({name:"Abirami"},{$inc:{age:1}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+B18> db.Students.find().pretty()    
+[
+  {
+    _id: ObjectId("634c22cf28da79f6836dcf90"),
+    name: 'Abi',
+    Country: 'India',
+    age: 25
+  },
+  {
+    _id: ObjectId("634c22f228da79f6836dcf91"),
+    name: 'Abi',
+    course: 'NEM_111',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111',
+    Country: 'India',
+    age: 26
+  },
+  {
+    _id: ObjectId("634c24ee28da79f6836dcf94"),
+    name: 'Vamika',
+    age: '8mo',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c250c28da79f6836dcf95"),
+    name: 'Ammu',
+    age: '17',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf96"),
+    name: 'Albert',
+    course: 'rct',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf97"),
+    name: 'Ankush',
+    course: 'DSA',
+    Country: 'India'
+  }
+]
+B18> db.Students.updateMany({course:"rct"},{$set:{type:"Frontend"}})    
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+B18> db.Students.deleteMany({name:"Abi"})
+{ acknowledged: true, deletedCount: 
+2 }
+B18> db.find().pretty()
+TypeError: db.find is not a functionB18> db.Students.find().pretty()    
+[
+  {
+    _id: ObjectId("634c233e28da79f6836dcf93"),
+    name: 'Abirami',
+    course: 'NEM_111',
+    Country: 'India',
+    age: 26
+  },
+  {
+    _id: ObjectId("634c24ee28da79f6836dcf94"),
+    name: 'Vamika',
+    age: '8mo',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c250c28da79f6836dcf95"),
+    name: 'Ammu',
+    age: '17',
+    Country: 'India'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf96"),
+    name: 'Albert',
+    course: 'rct',
+    Country: 'India',
+    type: 'Frontend'
+  },
+  {
+    _id: ObjectId("634c25c828da79f6836dcf97"),
+    name: 'Ankush',
+    course: 'DSA',
+    Country: 'India'
+  }
+]
+B18>
