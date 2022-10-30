@@ -1,13 +1,13 @@
 const express = require("express")
-const { connection } = require("./db")
+const { connection } = require("./Config/db")
 const app = express()
-const{studentRouter}=require("./routes/student.route")
-const {iaRouter} = require("./routes/ia.route")
+const { studentRouter } = require("./routes/student.route")
+const { iaRouter } = require("./routes/ia.route")
 app.get("/", (req, res) => {
-    res, send("Hello")
+    res.send("Hello!")
 })
-app.use("/students",studentRouter)
-app.use("/ias",iaRouter)
+app.use("/students", studentRouter)
+app.use("/ias", iaRouter)
 app.listen(8008, async () => {
     try {
         await connection
