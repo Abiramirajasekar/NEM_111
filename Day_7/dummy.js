@@ -1,5 +1,7 @@
-const mongoose = require("mongoose")
+// Juz refer this 
 
+const mongoose = require("mongoose")
+const connection = mongoose.connect("mongodb://127.0.0.1:27017/data")
 const main = async () => {
     try {
         const conn = await mongoose.connect("mongodb://127.0.0.1:27017/data")
@@ -15,10 +17,24 @@ const main = async () => {
 
 }
 main()
-
-const StudentModel = mongoose.model("student", mongoose.Schema({
+studentSchema = mongoose.Schema({
     name: String,
     age: Number,
     course: String
 
-}))
+})
+
+const StudentModel = mongoose.model("student", studentSchema)
+
+const employeeSchema = mongoose.Schema({
+    name: String,
+    salary: Number,
+    role: String
+
+})
+const EmployeeModel = mongoose.model("employee", employeeSchema)
+
+module.exports = { StudentModel, connection }
+
+
+
